@@ -95,14 +95,10 @@ p {
     padding: 25px;
 }
 
-.heart:hover {
-    background-color: #a7f8e0;
-    cursor: pointer;
-}
-
-.cross:hover {
-    background-color: #f3b1c7;
-    cursor: pointer;
+.heart,
+.cross {
+    background-color: #ffffff;
+    transition: 0.5s;
 }
 
 #badge {
@@ -151,5 +147,16 @@ p {
     }
     .swipeButton {
         margin: 0 25px;
+    }
+    .heart:hover {
+        background-color: #a7f8e0;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+
+    .cross:hover {
+        background-color: #f3b1c7;
+        transition: 0.25s;
+        cursor: pointer;
     }
 }

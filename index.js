@@ -1,9 +1,15 @@
 import dogsData from "./javaScript/data.js";
 import Dog from "./javaScript/Dog.js";
 
+// Current Index and CurrentDog
+let currentIndex = 0;
+
 // Elements from DOM
 const heartBtn = document.querySelector("#heartBtn");
 const crossBtn = document.querySelector("#crossBtn");
+heartBtn.disabled = false;
+crossBtn.disabled = false;
+
 const profileImg = document.querySelector("#profileImg");
 const nameElement = document.querySelector("#nameElement");
 const bioElement = document.querySelector("#bioElement");
@@ -20,10 +26,7 @@ const dogProfiles = dogsData.map((dog) => {
     );
 });
 
-// Current Index and CurrentDog
-let currentIndex = 0;
 let currentDog = dogProfiles[currentIndex];
-
 // This function updates the DOM with new data
 const newDog = (dog) => {
     profileImg.src = dog.avatar;
@@ -69,10 +72,22 @@ const showBadge = (hasBeenLiked, hasBeenSwiped) => {
 // Runs the newDog function to have a dog displayed on load
 newDog(currentDog);
 
+// Disables buttons
+
+const disableButtons = () => {
+    heartBtn.disabled = true;
+    crossBtn.disabled = true;
+    setTimeout(() => {
+        heartBtn.disabled = false;
+        crossBtn.disabled = false;
+    }, 1600);
+};
 // Event listeners
 heartBtn.addEventListener("click", () => {
     updateDog(true, true);
+    disableButtons();
 });
 crossBtn.addEventListener("click", () => {
     updateDog(true, false);
+    disableButtons();
 });
