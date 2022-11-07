@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="appContainer">
+            <div class="headerContainer">
+                <img src="./images/icon-profile.png" alt="profile icon" class="icon" />
+                <img src="./images/logo.png" alt="" class="logo" />
+                <img src="./images/icon-chat.png" alt="chat icon" class="icon" />
+            </div>
+            <main class="profileContainer">
+                <img
+                    id="profileImg"
+                    src="/images/dog-bella.jpg"
+                    alt=""
+                    class="profileImage"
+                />
+                <div class="profileText">
+                    <h2 id="nameElement" class="nameHeading">Name</h2>
+                    <p id="bioElement" class="descriptionPara">Description</p>
+                </div>
+            </main>
+            <div class="swipeContainer">
+                <button id="crossBtn" class="swipeButton cross">
+                    <img src="/images/icon-cross.png" alt="" class="swipeButtonIcon" />
+                </button>
+                <button id="heartBtn" class="swipeButton heart">
+                    <img src="/images/icon-heart.png" alt="" class="swipeButtonIcon" />
+                </button>
+            </div>
+        </div>
+        <script src="/index.js" type="module"></script>
+    </body>
+</html>

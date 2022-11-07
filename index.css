@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* Typography */
+
+.nameHeading {
+    font-size: 64px;
+}
+
+.descriptionPara {
+    color: #ffffff90;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Containers */
+
+.profileText {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    color: white;
+}
+
+.appContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    margin: 1em 0;
+}
+
+.profileContainer {
+    margin: 0 auto;
+    width: 95%;
+    position: relative;
+}
+
+.swipeContainer {
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons/Links */
+
+.swipeButton {
+    border: none;
+    display: flex;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 2em;
+    margin: 1em 2em;
+    box-shadow: 0px 10px 20px #97979a;
+}
+
+/* Images */
+
+.icon {
+    width: 50px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.profileImage {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.swipeButtonIcon {
+    width: 75px;
+}
+
+.heart:hover {
+    background-color: #a7f8e0;
+    cursor: pointer;
+}
+
+.cross:hover {
+    background-color: #f3b1c7;
+    cursor: pointer;
+}
+
+#badge {
+    animation: fadeIn 0.5s;
+    transform: rotate(-30deg);
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
