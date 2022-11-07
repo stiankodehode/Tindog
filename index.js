@@ -57,9 +57,9 @@ const showBadge = (hasBeenLiked, hasBeenSwiped) => {
     const swiped = hasBeenSwiped;
 
     if (swiped && liked) {
-        badgeElement.src = "/images/badge-like.png";
+        badgeElement.src = "./images/badge-like.png";
     } else if (swiped) {
-        badgeElement.src = "/images/badge-nope.png";
+        badgeElement.src = "./images/badge-nope.png";
     }
     document.querySelector(".profileContainer").appendChild(badgeElement);
     setTimeout(() => {
