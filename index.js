@@ -1,5 +1,5 @@
-import dogsData from "/data.js";
-import Dog from "/Dog.js";
+import dogsData from "./data.js";
+import Dog from "./Dog.js";
 
 // Elements from DOM
 const heartBtn = document.querySelector("#heartBtn");
