@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-size: 1rem;
     font-family: Poppins, sans-serif;
+    background-color: #00000080;
 }
 
 h1,
@@ -14,12 +15,12 @@ p {
 /* Typography */
 
 .nameHeading {
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 .descriptionPara {
     color: #ffffff90;
-    font-size: 30px;
+    font-size: 2rem;
     margin: 10px 0;
 }
 
@@ -27,15 +28,16 @@ p {
 
 .profileText {
     position: absolute;
-    top: 85%;
     left: 5%;
+    bottom: 5%;
     color: white;
 }
 
 .appContainer {
     width: 100%;
-    max-width: 400px;
     margin: 0 auto;
+    padding-bottom: 10px;
+    background-color: white;
 }
 
 .headerContainer {
@@ -43,7 +45,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
-    margin: 1em 0;
+    margin: 0 0 1em 0;
 }
 
 .profileContainer {
@@ -68,7 +70,7 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    padding: 2em;
+    padding: 1em;
     margin: 1em 2em;
     box-shadow: 0px 10px 20px #97979a;
 }
@@ -90,6 +92,7 @@ p {
 
 .swipeButtonIcon {
     width: 75px;
+    padding: 25px;
 }
 
 .heart:hover {
@@ -118,5 +121,35 @@ p {
 
     to {
         opacity: 1;
+    }
+}
+
+@media (device-width > 400px) {
+    .appContainer {
+        max-width: 400px;
+        background-color: white;
+        border-radius: 25px;
+    }
+    .icon {
+        width: 7.5%;
+    }
+    .logo {
+        width: 20%;
+    }
+    .swipeButtonIcon {
+        width: 35px;
+        padding: 0;
+    }
+    .nameHeading {
+        font-size: 2rem;
+    }
+    .descriptionPara {
+        font-size: 1rem;
+    }
+    .headerContainer {
+        margin: 0.5rem 0;
+    }
+    .swipeButton {
+        margin: 0 25px;
     }
 }
